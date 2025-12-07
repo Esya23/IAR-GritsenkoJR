@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты - Мир колясок</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="7.webp" alt="Мир колясок" class="logo-img">
+                    <span class="logo-text">Мир колясок</span>
+                </a>
+                
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="contacts.html" class="nav-link active">Контакты</a>
+                    <a href="#" class="cart-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="section-title">Контакты</h1>
+            
+            <div class="contacts-container">
+                <!-- Контактная информация -->
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt contact-icon"></i>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Адрес магазина</h3>
+                            <p class="contact-text">г. Москва, ул. Красноказарменная, дом 17</p>
+                            <p class="contact-note">Рядом с метро "Авиамоторная"</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-phone contact-icon"></i>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Телефоны</h3>
+                            <p class="contact-text">+7 (123) 456-78-90</p>
+                            <p class="contact-text">+7 (800) 123-45-67 (бесплатно по России)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-envelope contact-icon"></i>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Электронная почта</h3>
+                            <p class="contact-text">info@mir-kolyasok.ru</p>
+                            <p class="contact-text">support@mir-kolyasok.ru (техническая поддержка)</p>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-item">
+                        <i class="fas fa-clock contact-icon"></i>
+                        <div class="contact-details">
+                            <h3 class="contact-title">Часы работы</h3>
+                            <p class="contact-text">Понедельник - Пятница: 10:00 - 20:00</p>
+                            <p class="contact-text">Суббота: 10:00 - 18:00</p>
+                            <p class="contact-text">Воскресенье: 11:00 - 16:00</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Форма обратной связи -->
+                <div class="contact-form">
+                    <h2 class="contact-form-title">Напишите нам</h2>
+                    <form id="contactForm">
+                        <input type="text" class="form-input" placeholder="Ваше имя *" required>
+<input type="email" class="form-input" placeholder="Электронная почта *" required>
+                        <input type="tel" class="form-input" placeholder="Телефон" id="phone-input">
+                        <select class="form-input">
+                            <option value="">Выберите тему</option>
+                            <option value="question">Вопрос по товару</option>
+                            <option value="order">Вопрос по заказу</option>
+                            <option value="delivery">Доставка</option>
+                            <option value="other">Другое</option>
+                        </select>
+                        <textarea class="form-textarea" placeholder="Ваше сообщение *" rows="5" required></textarea>
+                        <button type="submit" class="btn btn-submit">Отправить сообщение</button>
+                    </form>
+                </div>
+            </div>
+            
+            <!-- Дополнительная информация с фото -->
+            <div class="additional-info">
+                <h2 class="section-title">Как нас найти</h2>
+                
+                <!-- Фото магазина -->
+                <div class="location-photo">
+                    <img src="9.webp" alt="Наш магазин по адресу: г. Москва, ул. Красноказарменная, 17" 
+                         class="location-img"
+                         onerror="this.onerror=null; this.src='https://via.placeholder.com/800x400/ffb6c1/333?text=ул.+Красноказарменная,+17'; this.alt='Наш магазин'">
+                    <p class="photo-caption">Наш магазин по адресу: г. Москва, ул. Красноказарменная, 17</p>
+                </div>
+                
+                <!-- Способы проезда -->
+                <div class="info-grid">
+                    <div class="info-card">
+                        <i class="fas fa-subway info-icon"></i>
+                        <h3>На метро</h3>
+                        <p>Станция "Авиамоторная", выход к ул. Красноказарменная, 3 минуты пешком</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-car info-icon"></i>
+                        <h3>На машине</h3>
+                        <p>Бесплатная парковка на территории магазина, 10 машиномест</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-bus info-icon"></i>
+                        <h3>На автобусе</h3>
+                        <p>Остановка "Красноказарменная улица", автобусы №59, 759, т24</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Мир колясок</p>
+            <p class="footer-text">г. Москва, ул. Красноказарменная, 17</p>
+            <p class="footer-text">Телефон: +7 (123) 456-78-90</p>
+
+            <li>Сайт размещен  <a href="https://esya23.github.io/zadanie1GJ/"> автором  </a> | Домен: GJR</li>
+        </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <p class="cart-empty">Корзина пуста</p>
+                </div>
+                <div class="cart-total">
+                    Итого: <span id="total-price">0</span> ₽
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-checkout" id="checkout">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+   
+</body>
+</html>
