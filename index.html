@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мир колясок - Главная</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="7.webp" alt="Мир колясок" class="logo-img">
+                    <span class="logo-text">Мир колясок</span>
+                </a>
+                
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav-link active">Главная</a>
+                    <a href="catalog.html" class="nav-link">Каталог</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                    <a href="#" class="cart-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <!-- Герой-секция -->
+        <section class="hero">
+            <div class="container">
+                <h1 class="hero-title">Добро пожаловать в мир колясок</h1>
+                <p class="hero-text">Лучшие коляски для вашего малыша. Безопасность, комфорт и качество в одном месте.</p>
+                <a href="catalog.html" class="btn btn-primary">Смотреть каталог</a>
+            </div>
+        </section>
+
+        <!-- Особенности -->
+        <section class="features">
+            <div class="container">
+                <h2 class="section-title">Наши преимущества</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <i class="fas fa-shield-alt feature-icon"></i>
+                        <h3 class="feature-title">Качество</h3>
+                        <p class="feature-text">Только проверенные бренды с сертификатами безопасности</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-truck feature-icon"></i>
+                        <h3 class="feature-title">Доставка</h3>
+                        <p class="feature-text">Быстрая доставка по городу, бесплатно при заказе от 15 000 ₽</p>
+                    </div>
+                    <div class="feature-card">
+                        <i class="fas fa-percent feature-icon"></i>
+                        <h3 class="feature-title">Цены</h3>
+                        <p class="feature-text">Лучшие цены на рынке и скидки постоянным клиентам</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Наш магазин -->
+        <section class="our-shop">
+            <div class="container">
+                <h2 class="section-title">Наш магазин</h2>
+                <div class="shop-content">
+                    <div class="shop-image">
+                        <img src="8.jpg" alt="Фото нашего магазина" class="shop-img">
+                    </div>
+                    <div class="shop-info">
+                        <h3 class="shop-subtitle">Приходите к нам в гости!</h3>
+                        <p class="shop-text">Мы находимся в центре города и предлагаем:</p>
+                        <ul class="shop-list">
+                            <li class="shop-list-item">Более 50 моделей колясок в наличии</li>
+                            <li class="shop-list-item">Профессиональные консультации специалистов</li>
+                            <li class="shop-list-item">Тест-драйв колясок прямо в магазине</li>
+<li class="shop-list-item">Удобные условия оплаты и кредит</li>
+                            <li class="shop-list-item">Гарантия 2 года на все товары</li>
+                        </ul>
+                        <p class="shop-text">Мы работаем для вас с 2018 года и помогли уже более 1000 семей выбрать идеальную коляску для их малышей.</p>
+                        <a href="contacts.html" class="btn btn-primary">Посмотреть контакты</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Мир колясок</p>
+            <p class="footer-text">Телефон: +7 (123) 456-78-90</p>
+
+            <li>Сайт размещен  <a href="https://esya23.github.io/zadanie1GJ/"> автором  </a> | Домен: GJR</li>
+        </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <p class="cart-empty">Корзина пуста</p>
+                </div>
+                <div class="cart-total">
+                    Итого: <span id="total-price">0</span> ₽
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-checkout" id="checkout">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
