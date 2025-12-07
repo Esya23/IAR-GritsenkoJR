@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог колясок - Мир колясок</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Шапка -->
+    <header class="header">
+        <div class="container">
+            <div class="header-container">
+                <a href="index.html" class="logo">
+                    <img src="7.webp" alt="Мир колясок" class="logo-img">
+                    <span class="logo-text">Мир колясок</span>
+                </a>
+                
+                <button class="burger" id="burger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <nav class="nav" id="nav">
+                    <a href="index.html" class="nav-link">Главная</a>
+                    <a href="catalog.html" class="nav-link active">Каталог</a>
+                    <a href="contacts.html" class="nav-link">Контакты</a>
+                    <a href="#" class="cart-btn" id="cart-btn">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span id="cart-count">0</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <h1 class="section-title">Каталог колясок</h1>
+            
+            <!-- Фильтры -->
+            <div class="filters">
+                <select id="category-filter" class="filter-select">
+                    <option value="all">Все категории</option>
+                    <option value="comfort">Комфортные</option>
+                    <option value="light">Легкие</option>
+                    <option value="double">Для двойни</option>
+                </select>
+                <button id="reset-filters" class="btn btn-primary">Сбросить фильтры</button>
+            </div>
+
+            <!-- Товары В HTML -->
+            <div class="products-grid" id="products-container">
+                <!-- Товар 1 - Комфортная -->
+                <div class="product-card" data-category="comfort">
+                    <div class="product-image">
+                        <img src="1.jpg" alt="Премиум комфорт" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Cybex Priam IV</h3>
+                        <p class="product-description">Удобная коляска для города с регулируемой спинкой и солнцезащитным козырьком</p>
+                        <div class="product-category">Комфортные</div>
+                        <div class="product-price">125 000 ₽</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-id="1"
+                                    data-name="Премиум комфорт"
+                                    data-price="125000">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 2 - Легкая -->
+                <div class="product-card" data-category="light">
+                    <div class="product-image">
+                        <img src="2.jpg" alt="Легкая прогулка" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Carrello Bravo Carbon</h3>
+                        <p class="product-description">Легкая и маневренная коляска весом всего 5 кг, складывается одной рукой</p>
+                        <div class="product-category">Легкие</div>
+                        <div class="product-price">18 000 ₽</div>
+                        <div class="product-actions">
+<button class="btn btn-primary add-to-cart-btn" 
+                                    data-id="2"
+                                    data-name="Легкая прогулка"
+                                    data-price="18000">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 3 - Для двойни -->
+                <div class="product-card" data-category="double">
+                    <div class="product-image">
+                        <img src="3.jpg" alt="Для двойни" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bugaboo donkey 2 twin</h3>
+                        <p class="product-description">Просторная коляска для двух детей с независимой подвеской и большим багажником</p>
+                        <div class="product-category">Для двойни</div>
+                        <div class="product-price">235 000 ₽</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-id="3"
+                                    data-name="Для двойни"
+                                    data-price="235000">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 4 - Комфортная -->
+                <div class="product-card" data-category="comfort">
+                    <div class="product-image">
+                        <img src="4.jpg" alt="Трансформер 3в1" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">LuxMom</h3>
+                        <p class="product-description">Люлька, прогулочный блок и автокресло в одном комплекте. Идеально для новорожденных</p>
+                        <div class="product-category">Комфортные</div>
+                        <div class="product-price">25 000 ₽</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-id="4"
+                                    data-name="Трансформер 3в1"
+                                    data-price="25000">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 5 - Комфортная -->
+                <div class="product-card" data-category="comfort">
+                    <div class="product-image">
+                        <img src="5.jpg" alt="Городская классика" class="product-img">
+                    </div>
+                    <div class="product-info">
+                        <h3 class="product-title">Tutis Mio 3+</h3>
+                        <p class="product-description">Надежная коляска для повседневного использования с прочной рамой</p>
+                        <div class="product-category">Комфортные</div>
+                        <div class="product-price">72 000 ₽</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-id="5"
+                                    data-name="Городская классика"
+                                    data-price="72000">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Товар 6 - Легкая -->
+                <div class="product-card" data-category="light">
+                    <div class="product-image">
+                        <img src="6.jpg" alt="Спортивная модель" class="product-img">
+</div>
+                    <div class="product-info">
+                        <h3 class="product-title">Bumbleride indie</h3>
+                        <p class="product-description">Для активных родителей, большие пневматические колеса, усиленная амортизация</p>
+                        <div class="product-category">Легкие</div>
+                        <div class="product-price">39 000 ₽</div>
+                        <div class="product-actions">
+                            <button class="btn btn-primary add-to-cart-btn" 
+                                    data-id="6"
+                                    data-name="Спортивная модель"
+                                    data-price="39000">
+                                В корзину
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Подвал -->
+    <footer class="footer">
+        <div class="container">
+            <p class="footer-text">© 2025 Мир колясок</p>
+            <p class="footer-text">Телефон: +7 (123) 456-78-90</p>
+
+            <li>Сайт размещен  <a href="https://esya23.github.io/zadanie1GJ/"> автором  </a> | Домен: GJR</li>
+        </div>
+    </footer>
+
+    <!-- Модальное окно корзины -->
+    <div class="modal" id="cart-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 class="modal-title">Корзина</h3>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <div class="cart-items" id="cart-items">
+                    <p class="cart-empty">Корзина пуста</p>
+                </div>
+                <div class="cart-total">
+                    Итого: <span id="total-price">0</span> ₽
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-checkout" id="checkout">Оформить заказ</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="catalog.js"></script>
+</body>
+</html>
